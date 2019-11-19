@@ -11,7 +11,7 @@ def get_data(name):
 
 
 def data_post(name):
-    url =  "http://47.105.76.234:3301/image"
+    url =  "http://"":3301/image"
     data = {'img':get_data(name), 'name':name}
     json_mod = json.dumps(data)
     res = requests.post(url=url, data=json_mod.encode("utf-8"), headers ={'Content-Type': 'application/json'})
